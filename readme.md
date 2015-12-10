@@ -1,24 +1,26 @@
-# Background 
+# A Lebanese life in bribes
 
-This interactive narrative is based on data collected by Sakker el Dekkene, a Lebanese NGO that documents and publicises corruption, primarily by collecting reports of acts of bribery across public institutions in Lebanon. 
+This interactive narrative is based on data collected by <a href="https://www.sakkera.com/">Sakker el Dekkene</a> (SED), a Lebanese NGO which documents and publicises corruption. One of SED's key activities is collecting reports of bribery from the Lebanese public. 
 
 The designs for the narrative were conceived and at the D4C visualisation workshop in Beirut, 27 Nov - December 3 2015.
 
-This demo is based on the team's work. 
+This <a href="http://radiocontrolled.github.io/Sakker-el-Dekkene/">demo for the interactive</a> is based on the team's work. Please note it is in development. 
 
-# Team 
+# Our Team 
 * Jana Chammaa, Researcher, Lebanon
-* Matteo, Developer, Italy
+* Matteo Azzi, Developer, Italy
 * Amir Lajmi, Designer, Tunisia
 * Yara Chehwane, Law student, Sakker el Dekkene, Lebanon
 * Mostafa Zohdy, Designer, Egypt
 * Alison Benjamin, Developer, UK
 
-# Mentors
-Richard Kahwagi, Small Media
-Wes Grubbs, Pitch Interactive
-Jessica Anderson, Small Media
-Alice Corona
-Amanda Hobbs
+# Our Mentors
+* Richard Kahwagi, Small Media
+* Wes Grubbs, Pitch Interactive
+* Jessica Anderson, Small Media
+* Alice Corona
+* Amanda Hobbs
 
+# Thank you 
+* Brownwen, Stina and Richard @ Small Media
 
