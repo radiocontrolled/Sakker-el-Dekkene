@@ -62,6 +62,8 @@
   setSize("#section6");    
   setSize("#section7");      
   setWidth("footer");
+  setSize("#breakdown");     
+
 
 
   function drawSvg() {
@@ -343,6 +345,7 @@
     setSize("#section6");    
     setSize("#section7");      
     setWidth("footer");
+    setSize("#breakdown");     
 
     // resize visualisation (TBC)
     getViewportDimensions();
