@@ -1,0 +1,200 @@
+@red: #d91f2b; 
+@lightGrey: #989798;
+@darkGrey: #555;
+@darkDarkGrey: #686868;
+@white: #fff; 
+@black: #000; 
+
+.verticalAlign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body {
+  margin: 0;
+  color: @darkDarkGrey;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1 {
+  color: @red;
+  font-size: 3em;
+}
+
+h2 {
+  color: @darkDarkGrey; 
+  font-size: 1.5em;
+
+}
+
+header#hero {
+  background: url("https://placeholdit.imgix.net/~text?txtsize=225&txt=3000%C3%971000&w=3000&h=1000");
+  background-size:cover;
+  position:relative;
+}
+
+div.header {
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%);
+}
+
+div.lead {
+  font-size: 1.5em;
+  padding: 1em;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  .verticalAlign;
+}
+
+div.lead .small {
+  font-size: 75%;
+  font-style: italic;
+  color: @red;
+}
+
+section {
+  /* prevent blurryness with vertical align, 
+  @ http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+section div {
+  font-size: 1.25em;
+  padding: 2em;
+  text-align: justify;
+}
+
+section div.left {
+  width: 50%;
+  h2 {
+    text-align: right;
+    margin-bottom: 0;
+  }
+   p {
+    margin-top: 0;
+   }
+}
+
+section div.right {
+  float: right;
+  width: 50%;
+  h2 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+   p {
+    margin-top: 0;
+   }
+}
+
+div#report {
+  background: @red;
+  color: @white;
+  padding: 4em 0 6em 0;
+  text-align: center;
+}
+
+div#report h2 {
+  font-size: 2em;
+  color: @white;
+}
+
+div#report h3 {
+  font-size: 0.75em;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
+button.reportButton,
+button.methodologyButton {
+  border: 1px solid @white;
+  display: inline-block;
+  padding: 1em 3em;
+  background: @red;
+  color: @white;
+  font-size: 1em;
+  margin: 1em;
+}
+
+button.reportButton:hover,
+button.reportButton:focus,
+button.reportButton:active, 
+button.methodologyButton:hover,
+button.methodologyButton:focus, 
+button.methodologyButton:active{
+  background: @white;
+  color: @red;
+}
+/* visualisation */
+
+
+.birth, 
+.school, 
+.university,
+.workingLife, 
+.familyLife, 
+.retirement {
+  opacity: 0;
+}
+
+/* media queries */ 
+
+@media (max-width: 400px) {
+  div.lead {
+    width: 70%;
+  }
+  section div {
+    font-size: 1em;
+  }
+  section div.right,
+  section div.left {
+    float: static;
+    width: auto;
+  }
+}
+
+
+/* footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  padding-left: 2em;
+  right: 0;
+  bottom: 2em;
+  // background: @lightGrey;
+
+}    
+
+
+/* styling for prototype version 1
+
+for main.js
+.birth, 
+.school, 
+.university,
+.workingLife, 
+.familyLife, 
+.retirement {
+  opacity: 0;
+}
+*/
+/*svg {
+  transform: rotate(0.5turn);
+}
+
+*/
