@@ -3,12 +3,5 @@ indexOriginalGrid.html
 d3-grid-master/
 css/style.hold.css
 css/style.hold.less
-assets/cradleToGraveCS5.ai
-assets/cradleToGrave.png
-assets/cradleToGrave2.ai
-assets/cradleToGrave.ai
-assets/cradleToGrave.pdf
-assets/cradleToGrave.png
-assets/moneyStackBlue.ai
-assets/moneyBlue.ai
-bower_components/parallax.js
+bower_components/parallax.js/
+js/main.js
