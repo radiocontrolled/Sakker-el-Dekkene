@@ -1,3 +1,4 @@
+/* variables */ 
 @red: #d91f2b; 
 @lightGrey: #989798;
 @darkGrey: #555;
@@ -6,12 +7,23 @@
 @black: #000; 
 @lightBlue: #7FB9E6;
 
+/* mixins - Google Fonts */ 
+.serif {
+  font-family: 'Sorts Mill Goudy', serif;
+
+}
+.sansSerif {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* begin style */
 
 body {
   margin: 0;
   color: @darkDarkGrey;
   line-height: 1.5;
   font-size: 16px;
+  .sansSerif;
 }
 
 h1 {
@@ -19,6 +31,7 @@ h1 {
   font-size: 3em;
   margin: 0; 
   text-align: center;
+  .serif;
 }
 
 h2 {
@@ -26,6 +39,7 @@ h2 {
   font-size: 1.5em;
   text-align: center;
   font-style: italic;
+  .serif;
 }
 
 
@@ -133,6 +147,7 @@ button.methodologyButton {
   color: @white;
   margin: 1em;
   font-size: 0.75em;
+  .sansSerif;
 }
 
 button.reportButton:hover,
