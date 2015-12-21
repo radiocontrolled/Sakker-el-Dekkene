@@ -84,7 +84,7 @@
         formatter: function (value, options) {
           value = value.toFixed(options.decimals);
           value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-          return value;
+          return "Estimated accumulated bribes: " + value + " ل.ل";
         }
       });
   }
