@@ -1,10 +1,3 @@
-.verticalAlign {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 body {
   margin: 0;
   color: #686868;
@@ -14,27 +7,19 @@ body {
 h1 {
   color: #d91f2b;
   font-size: 3em;
+  margin: 0;
+  text-align: center;
 }
 h2 {
   color: #686868;
   font-size: 1.5em;
+  text-align: center;
+  font-style: italic;
 }
-header#hero {
+section#hero {
   background: url("https://placeholdit.imgix.net/~text?txtsize=225&txt=3000%C3%971000&w=3000&h=1000");
   background-size: cover;
   position: relative;
-}
-div.header {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  -ms-transform: translate(0, -50%);
-  /* IE 9 */
-  -webkit-transform: translate(0, -50%);
-  /* Safari */
-  transform: translate(0, -50%);
 }
 div.lead {
   font-size: 1.5em;
@@ -42,11 +27,6 @@ div.lead {
   margin: 0 auto;
   width: 50%;
   text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 div.lead .small {
   font-size: 75%;
@@ -61,8 +41,8 @@ section {
   transform-style: preserve-3d;
 }
 section div {
-  font-size: 1.25em;
-  padding: 2em;
+  font-size: 1.15em;
+  padding: 0 6em 4em 6em;
   text-align: justify;
 }
 section div.left {
@@ -75,6 +55,15 @@ section div.left h2 {
 section div.left p {
   margin-top: 0;
 }
+#section1 .fp-tableCell,
+#section2 .fp-tableCell,
+#section3 .fp-tableCell,
+#section4 .fp-tableCell,
+#section5 .fp-tableCell,
+#section6 .fp-tableCell,
+#section7 .fp-tableCell {
+  vertical-align: top!important;
+}
 section div.right {
   float: right;
   width: 50%;
@@ -86,21 +75,26 @@ section div.right h2 {
 section div.right p {
   margin-top: 0;
 }
-div#report {
+section.report {
   background: #d91f2b;
   color: #ffffff;
   padding: 4em 0 6em 0;
   text-align: center;
 }
-div#report h2 {
+section.report h2 {
   font-size: 2em;
   color: #ffffff;
 }
-div#report h3 {
-  font-size: 0.75em;
+section.report h3 {
+  font-size: 1em;
   font-weight: normal;
   font-style: italic;
   margin-bottom: 2em;
+  text-align: center;
+}
+div.report-buttons {
+  margin: 0 auto;
+  text-align: center;
 }
 button.reportButton,
 button.methodologyButton {
@@ -109,8 +103,8 @@ button.methodologyButton {
   padding: 1em 3em;
   background: #d91f2b;
   color: #ffffff;
-  font-size: 1em;
   margin: 1em;
+  font-size: 0.75em;
 }
 button.reportButton:hover,
 button.reportButton:focus,
@@ -130,42 +124,48 @@ button.methodologyButton:active {
 .retirement {
   opacity: 0;
 }
+/* footer + counter */
+footer {
+  position: fixed;
+  left: 0;
+  padding-left: 4em;
+  right: 0;
+  bottom: 0em;
+  border-top: 1px solid #989798;
+  height: 12em;
+}
+footer.invisible {
+  border: none;
+}
+#counter {
+  bottom: -8em;
+  height: 12em;
+  left: 28em;
+  padding-left: 4em;
+  position: fixed;
+  right: 0;
+}
 /* media queries */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   div.lead {
-    width: 70%;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0;
+  }
+  div.lead .small {
+    font-size: 100%;
   }
   section div {
     font-size: 1em;
+    padding: 0 1em 1em 1em;
   }
   section div.right,
   section div.left {
     float: static;
     width: auto;
   }
+  footer {
+    padding-left: 1.75em;
+  }
 }
-/* footer */
-footer {
-  position: fixed;
-  left: 0;
-  padding-left: 2em;
-  right: 0;
-  bottom: 2em;
-}
-/* styling for prototype version 1
-
-for main.js
-.birth, 
-.school, 
-.university,
-.workingLife, 
-.familyLife, 
-.retirement {
-  opacity: 0;
-}
-*/
-/*svg {
-  transform: rotate(0.5turn);
-}
-
-*/

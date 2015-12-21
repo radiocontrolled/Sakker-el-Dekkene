@@ -1,3 +1,7 @@
+
+
+Snap to section (but disable on mobile)
+
 # A Lebanese life in bribes
 
 This interactive narrative is based on data collected by <a href="https://www.sakkera.com/">Sakker el Dekkene</a> (SED), a Lebanese NGO which documents and publicises corruption. One of SED's key activities is collecting reports of bribery from the Lebanese public. 
@@ -24,3 +28,7 @@ This <a href="http://radiocontrolled.github.io/Sakker-el-Dekkene/">demo for the 
 # Thank you 
 * Brownwen, Stina and Richard @ Small Media
 
+Stuff: 
+http://stackoverflow.com/questions/2540277/jquery-counter-to-count-up-to-a-target-numbe
+
+jQuery replacement. 
